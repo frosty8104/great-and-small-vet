@@ -2,8 +2,9 @@ body {
     background: #ebebeb;
     color: #000000;
     font-size: 16px;
-    max-width: 1200px;
-
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 h1 {
     font-size: 3em;
@@ -22,8 +23,26 @@ h3 {
 p {
     padding-left: 2%;
 }
-nav {
+header,
+footer,
+main {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+/* HEADER */
+h1,
+h2 {
     text-align: center;
+}
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
 }
 nav ul li {
     display: inline-block;
@@ -34,30 +53,47 @@ nav ul li a {
     text-decoration: none;
 }
 /* HOME */
+#home {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
 .topic {
-    float: left;
-    padding-right: 1.5%;
+    display: flex;
     width: 55%;
 }
-.hours {
-    float: right;
-    width: 40%;
+.topic h2 {
+    display: flex;
+    text-align: center;
+    width: 90%;
 }
-.tour {
-    float: right;
-    clear: right;
-    width: 40%;
+.topic p {
+    display: flex;
+    width: 90%;
+}
+.hours,
+.tour,
+.pet {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 35%;
+}
+.hours li {
+    text-decoration: none;
+}
+.tour video {
+    width: 90%;
 }
 .pet {
     border: 1px dashed #000000;
     border-radius: 5px;
-    float: right;
-    clear: right;
-    width: 40%;
 }
 .client {
-    float: left;
-    width: 55%;
+    display: flex;
+    width: 45%;
 }
 /* ABOUT */
 /* SERVICES */
