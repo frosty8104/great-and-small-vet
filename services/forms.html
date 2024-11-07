@@ -25,43 +25,42 @@
     <!-- sections/divs: frequent forms, client surveys -->
     <!-- current forms: exam; health certificates: vaccine, spay/neuter, health check; release; 
     estimate -->
-    <div class="record">
+    <!--<div class="records">-->
         <form class="info" action="">
             <h2>Client & Patient Information</h2>
-            <label>Date: </label><input type="text" id="txtDat" value=""/>
-            <label>Name: </label><input type="text" id="txtNam" value=""/><br>
-            <label>Mailing Address: </label><input type="text" id="txtAdd" value=""/>
-            <label>Postal Code: </label><input type="text" id="txtPost" value=""/><br>
-            <label>Street Address: </label><input type="text" id="txtAdd" value=""/>
-            <label>Postal Code: </label><input type="text" id="txtPost" value=""/><br>
-            <label>Home Phone: </label><input type="text" id="txtPhon" value=""/>
-            <label>Work Phone: </label><input type="text" id="txtPhon" value=""/><br>
+            <p>Please print clearly</p><br>
+            <label>Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Name: </label><input type="text" id="txtName" value=""/><br>
+            <label>Mailing Address: </label><input type="text" id="txtAddy" value=""/>
+            <label>Postal Code: </label><input type="text" id="txtPC" value=""/><br>
+            <label>Street Address: </label><input type="text" id="txtAddy" value=""/>
+            <label>Postal Code: </label><input type="text" id="txtPC" value=""/><br>
+            <label>Home Phone: </label><input type="text" id="txtPhone" value=""/>
+            <label>Work Phone: </label><input type="text" id="txtPhone" value=""/><br>
             <label>Driver's License #: </label><input type="text" id="txtNum" value=""/>
             <label>Province/Territory: </label><input type="text" id="txtProv" value=""/><br><br>
-            <label>Pet Name </label><input type="text" id="txtPet" value=""/>
-            <label>Birth Date: </label><input type="text" id="txtDob" value=""/>
-            <label>Species: </label><input type="text" id="txtSpec" value=""/><br>
-            <label>Breed: </label><input type="text" id="txtBred" value=""/>
-            <label>Colour: </label><input type="text" id="txtCol" value=""/>
-            <label>Gender: </label><input type="text" id="txtGen" value=""/><br>
-            <label>Spayed</label><input type="checkbox" id="txtFix" value=""/>
-            <label>Neutered</label><input type="checkbox" id="txtFix" value=""/>
+            <table class="pets">Animals
+                <tr><th>Name</th><th>Date of Birth</th><th>Species</th><th>Breed</th><th>Colour</th><th>Gender</th><th>Spayed or Neutered?</th></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
             <p>I understand that full payment is due on the same date as services rendered.</p>
-            <label>Signature</label><input type="text" id="txtSig" value=""/>
+            <label>Signature</label><input type="text" id="txtSign" value=""/>
         </form>
         
-        <form class="medical" action="">
+        <form class="medrec" action="">
             <h2>Patient Medical Record</h2>
-            <label>Client Name: </label><input type="text" id="txtNam" value=""/>
-            <label>Phone #: </label><input type="text" id="txtPhon" value=""/><br>
-            <label>Address: </label><input type="text" id="txtAdd" value=""/>
+            <label>Client Name: </label><input type="text" id="txtName" value=""/>
+            <label>Phone #: </label><input type="text" id="txtPhone" value=""/><br>
+            <label>Address: </label><input type="text" id="txtAddy" value=""/>
             <label>Client #: </label><input type="text" id="txtNum" value=""/><br>
             <label>Pet Name: </label><input type="text" id="txtPet" value=""/>
-            <label>Breed: </label><input type="text" id="txtBred" value=""/>
-            <label>Colour: </label><input type="text" id="txtCol" value=""/><br>
+            <label>Breed: </label><input type="text" id="txtBreed" value=""/>
+            <label>Colour: </label><input type="text" id="txtColour" value=""/><br>
             <label>Sex</label><input type="text" id="txtSex" value=""/>
-            <label>Altered</label><input type="text" id="txtFix" value=""/>
-            <label>DOB</label><input type="text" id="txtDob" value=""/>
+            <label>Altered</label><input type="text" id="txtFixed" value=""/>
+            <label>DOB</label><input type="text" id="txtBirth" value=""/>
             <label>Age</label><input type="text" id="txtAge" value=""/>
             <label>Species</label><input type="text" id="txtSpec" value=""/>
             <table class="medic"><tr><th>Date</th><th></th><th>Charges</th></tr>
@@ -84,10 +83,10 @@
         
         <form class="soap" action="">
             <h2>Subjective, Objective, Assessment, Plan (S.O.A.P.)</h2>
-            <label>Owner's Name: </label><input type="text" id="txtNam" value=""/>
+            <label>Owner's Name: </label><input type="text" id="txtName" value=""/>
             <label>Patient's Name: </label><input type="text" id="txtPet" value=""/><br>
-            <label>Breed/Species: </label><input type="text" id="txtBred" value=""/>
-            <label>Colour/Sex: </label><input type="text" id="txtCol" value=""/>
+            <label>Breed/Species: </label><input type="text" id="txtBreed" value=""/>
+            <label>Colour/Sex: </label><input type="text" id="txtColour" value=""/>
             <table><tr><th>Date</th><th>S.O.A.P.</th></tr>
             <tr><td></td><td>Subjective - </td></tr>
             <tr><td></td><td></td></tr>
@@ -117,130 +116,140 @@
         
         <form class="exam" action="">
             <h2>Pet Exam Sheet</h2>
-            <div class="sig"><label><span>Pet Info: </span></label>
+            <label><span>Pet Info: </span></label>
             <label>Name: </label><input type="text" id="txtPet" value="">
-            <label>Age/DOB: </label><input type="text" id="txtDob" value="">
+            <label>Age/DOB: </label><input type="text" id="txtBirth " value="">
             <input type="checkbox" id="txtCan" value=""><label>Canine</label>
             <input type="checkbox" id="txtFel" value=""><label>Feline</label><br>
-            <label>Breed: </label><input type="text" id="txtBred" value="">
-            <input type="checkbox" id="txtMal" value=""><label>M</label>
-            <input type="checkbox" id="txtFem" value=""><label>F</label></div>
+            <label>Breed: </label><input type="text" id="txtBreed" value="">
+            <input type="checkbox" id="txtMale" value=""><label>M</label>
+            <input type="checkbox" id="txtFem" value=""><label>F</label>
 
-            <div class="own"><label><span>Owner Info: </span></label>
-            <label>Name: </label><input type="text" id="txtNam" value="">
-            <label>Phone #: </label><input type="text" id="txtPhon" value=""><br>
-            <label><b>Reason for Visit:</b> </label><input type="text" id="txtRes" value=""></div>
+            <label><span>Owner Info: </span></label>
+            <label>Name: </label><input type="text" id="txtName" value="">
+            <label>Phone #: </label><input type="text" id="txtPhone" value=""><br>
+            <label><b>Reason for Visit:</b> </label><input type="text" id="txtReason" value="">
 
-            <div class="sym"><label><b>Weight:</b> </label>
+            <label><b>Weight:</b> </label>
             <input type="checkbox" id="txtMin" value=""><label>Underweight</label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtMax" value=""><label>Overweight</label><br>
+
             <label><b>Neutered:</b> </label>
             <input type="checkbox" id="txtNo" value=""><label>No</label>
             <input type="checkbox" id="txtYes" value=""><label>Yes</label><br>
+
             <label><b>Spayed:</b> </label>
             <input type="checkbox" id="txtNo" value=""><label>No</label>
             <input type="checkbox" id="txtYes" value=""><label>Yes</label><br>
+
             <label><b>Energy:</b> </label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtMax" value=""><label>Increased</label>
             <input type="checkbox" id="txtMin" value=""><label>Decreased</label><br>
+
             <label><b>Appetite:</b> </label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtMax" value=""><label>Increased</label>
             <input type="checkbox" id="txtMin" value=""><label>Decreased</label>
             <input type="checkbox" id="txtNon" value=""><label>None</label><br>
+
             <label><b>Water Intake:</b> </label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtMax" value=""><label>Increased</label>
             <input type="checkbox" id="txtMin" value=""><label>Decreased</label>
             <input type="checkbox" id="txtNon" value=""><label>None</label><br>
+
             <label><b>Urination:</b> </label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtMax" value=""><label>Increased</label>
             <input type="checkbox" id="txtMin" value=""><label>Decreased</label>
             <input type="checkbox" id="txtNon" value=""><label>None</label><br>
+
             <label><b>Feces:</b> </label>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label>
             <input type="checkbox" id="txtOther" value=""><label>Other</label><input type="text" id="txtOth" value=""/>
             <input type="checkbox" id="txtNon" value=""><label>None</label><br>
+
             <label><b>Vomiting:</b> </label>
             <input type="checkbox" id="txtNon" value=""><label>None</label>
             <input type="checkbox" id="txtFrequ" value=""><label>Yes, frequency</label><input type="text" id="txtFreq" value=""/><br>
+
             <label><b>Coughing:</b> </label>
             <input type="checkbox" id="txtNon" value=""><label>None</label>
             <input type="checkbox" id="txtFrequ" value=""><label>Yes, frequency</label><input type="text" id="txtFreq" value=""/><br>
+
             <label><b>Sneezing:</b> </label>
             <input type="checkbox" id="txtNon" value=""><label>None</label>
-            <input type="checkbox" id="txtFreq" value=""><label>Yes, frequency</label><input type="text" id="txtFreq" value=""/></div>
+            <input type="checkbox" id="txtFreq" value=""><label>Yes, frequency</label><input type="text" id="txtFreq" value=""/>
 
-            <div class="rout"><div class="test"><label><span>Routine Tests</span></label><br>
-            <input type="checkbox" id="txtHart" value=""><label>Heartworm Test</label><br>
+            <label><span>Routine Tests</span></label><br>
+            <input type="checkbox" id="txtHeart" value=""><label>Heartworm Test</label><br>
             <input type="checkbox" id="txtFelv" value=""><label>FeLV Test</label><br>
             <input type="checkbox" id="txtFiv" value=""><label>FIV Test</label><br>
-            <input type="checkbox" id="txtFec" value=""><label>Fecal Exam</label><br>
-            <input type="checkbox" id="txtOther" value=""><label>Other: </label></div>
-            <div class="res"><label><span>Results</span></label><br>
-            <input type="checkbox" id="txtPos" value=""><label>Positive</label>
-            <input type="checkbox" id="txtNeg" value=""><label>Negative</label><br>
-            <input type="checkbox" id="txtPos" value=""><label>Positive</label>
-            <input type="checkbox" id="txtNeg" value=""><label>Negative</label><br>
-            <input type="checkbox" id="txtPos" value=""><label>Positive</label>
-            <input type="checkbox" id="txtNeg" value=""><label>Negative</label><br>
-            <input type="text" id="txtOth" value=""><br>
-            <input type="text" id="txtOth" value=""></div></div>
+            <input type="checkbox" id="txtFecal" value=""><label>Fecal Exam</label><br>
+            <input type="checkbox" id="txtOther" value=""><label>Other: </label>
+            <label><span>Results</span></label><br>
+            <input type="checkbox" id="txtPositive" value=""><label>Positive</label>
+            <input type="checkbox" id="txtNegative" value=""><label>Negative</label><br>
+            <input type="checkbox" id="txtPositive" value=""><label>Positive</label>
+            <input type="checkbox" id="txtNegative" value=""><label>Negative</label><br>
+            <input type="checkbox" id="txtPositive" value=""><label>Positive</label>
+            <input type="checkbox" id="txtNegative" value=""><label>Negative</label><br>
+            <input type="text" id="txtOther" value=""><br>
+            <input type="text" id="txtOther" value="">
             
-            <div class="vac"><label><span>Vaccinations Given</span></label><br>
+            <label><span>Vaccinations Given</span></label><br>
             <input type="checkbox" id="txtDhlp" value=""><label>DHLP - P</label><br>
-            <input type="checkbox" id="txtRab" value=""><label>Rabies (1yr / 3yr)</label><br>
-            <input type="checkbox" id="txtBord" value=""><label>Bordatella</label><br>
+            <input type="checkbox" id="txtRabies" value=""><label>Rabies (1yr / 3yr)</label><br>
+            <input type="checkbox" id="txtBordatella" value=""><label>Bordatella</label><br>
             <input type="checkbox" id="txtFvr" value=""><label>FVRCP</label><br>
-            <input type="checkbox" id="txtLeuk" value=""><label>Leukemia</label><br>
-            <input type="checkbox" id="txtOther" value=""><label>Other</label><input type="text" id="txtOth" value=""/></div>
+            <input type="checkbox" id="txtLeukemia" value=""><label>Leukemia</label><br>
+            <input type="checkbox" id="txtOther" value=""><label>Other</label><input type="text" id="txtOth" value=""/>
             
-            <div class="hart"><label><span>Heart</span></label><br>
+            <label><span>Heart</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <label>Heart Rate</label><input type="text" id="txtRate" value=""/><br><br>
             <input type="checkbox" id="txtMin" value=""><label>Slow</label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Normal</label><br>
             <input type="checkbox" id="txtMax" value=""><label>Fast</label><br>
-            <input type="checkbox" id="txtMur" value=""><label>Murmur</label>
-            <label>L</label></labe><input type="checkbox" id="txtLeft" value=""/>
-            <label>R</label><input type="checkbox" id="txtRight" value=""/></div>
-            <div class="lung"><label><span>Lungs</span></label><br>
+            <input type="checkbox" id="txtMurmur" value=""><label>Murmur</label>
+            <label>L</label><input type="checkbox" id="txtLeft" value=""/>
+            <label>R</label><input type="checkbox" id="txtRight" value=""/>
+            <label><span>Lungs</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
-            <input type="checkbox" id="txtCrack" value=""><label>Crackling</label><br>
+            <input type="checkbox" id="txtCrackling" value=""><label>Crackling</label><br>
             <input type="checkbox" id="txtBreath" value=""><label>Rapid Breathing</label><br>
             <input type="checkbox" id="txtCough" value=""><label>Coughing</label><br>
-            <input type="checkbox" id="txtWheez" value=""><label>Wheezing</label><br>
+            <input type="checkbox" id="txtWheeze" value=""><label>Wheezing</label><br>
             <input type="checkbox" id="txtTrach" value=""><label>Tracheitis</label><br>
-            <input type="checkbox" id="txtCong" value=""><label>Congestion</label><br>
-            <input type="checkbox" id="txtLabour" value=""><label>Laboured</label></div>
+            <input type="checkbox" id="txtCongestion" value=""><label>Congestion</label><br>
+            <input type="checkbox" id="txtLabour" value=""><label>Laboured</label>
             
-            <div class="eyes"><label><span>Eyes</span></label><br>
+            <label><span>Eyes</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
-            <input type="checkbox" id="txtDis" value=""><label>Discharge</label>
+            <input type="checkbox" id="txtDischarge" value=""><label>Discharge</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtEnt" value=""><label>Entropion</label>
+            <input type="checkbox" id="txtEntropion" value=""><label>Entropion</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtUlc" value=""><label>Corneal Ulcer</label>
+            <input type="checkbox" id="txtUlcer" value=""><label>Corneal Ulcer</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtCat" value=""><label>Cataracts</label>
+            <input type="checkbox" id="txtCataract" value=""><label>Cataracts</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtGrow" value=""><label>Lid Growth</label>
+            <input type="checkbox" id="txtGrowth" value=""><label>Lid Growth</label>
             <label>L</label></labe><input type="checkbox" id="txtLeft" value=""/>
-            <label>R</label><input type="checkbox" id="txtRight" value=""/></div>
+            <label>R</label><input type="checkbox" id="txtRight" value=""/>
             
-            <div class="ears"><label><span>Ears</span></label><br>
+            <label><span>Ears</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
-            <input type="checkbox" id="txtScal" value=""><label>Scaly Border</label>
+            <input type="checkbox" id="txtScaly" value=""><label>Scaly Border</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtMite" value=""><label>Ear Mites</label>
+            <input type="checkbox" id="txtMit" value=""><label>Ear Mites</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
             <input type="checkbox" id="txtHair" value=""><label>Excess Hair</label>
@@ -249,101 +258,101 @@
             <input type="checkbox" id="txtWax" value=""><label>Excess Wax</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtExu" value=""><label>Exudate</label>
+            <input type="checkbox" id="txtExude" value=""><label>Exudate</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
-            <input type="checkbox" id="txtFlam" value=""><label>Inflamed</label>
+            <input type="checkbox" id="txtFlame" value=""><label>Inflamed</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
             <label>R</label><input type="checkbox" id="txtRight" value=""/><br>
             <input type="checkbox" id="txtPus" value=""><label>Pus</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
-            <label>R</label><input type="checkbox" id="txtRight" value=""/></div>
+            <label>R</label><input type="checkbox" id="txtRight" value=""/>
             
-            <div class="nose"><label><span>Nose / Throat</span></label><br>
+            <label><span>Nose / Throat</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <input type="checkbox" id="txtDry" value=""><label>Dry / Crusty</label><br>
-            <input type="checkbox" id="txtTons" value=""><label>Enlarged Tonsils</label><br>
+            <input type="checkbox" id="txtTonsils" value=""><label>Enlarged Tonsils</label><br>
             <input type="checkbox" id="txtLymph" value=""><label>Enlarged Lymph Glands</label><br>
-            <input type="checkbox" id="txtDis" value=""><label>Nose Discharge</label>
+            <input type="checkbox" id="txtDischarge" value=""><label>Nose Discharge</label>
             <label>L</label><input type="checkbox" id="txtLeft" value=""/>
-            <label>R</label><input type="checkbox" id="txtRight" value=""/></div>
+            <label>R</label><input type="checkbox" id="txtRight" value=""/>
             
-            <div class="mouth"><label><span>Mouth / Teeth / Gums</span></label><br>
+            <label><span>Mouth / Teeth / Gums</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <input type="checkbox" id="txtLoose" value=""><label>Loose Tooth</label><br>
             <input type="checkbox" id="txtBroke" value=""><label>Broken Tooth</label><br>
             <input type="checkbox" id="txtStain" value=""><label>Stained Tooth</label><br>
-            <input type="checkbox" id="txtMem" value=""><label>Pale Membranes</label><br>
-            <input type="checkbox" id="txtTar" value=""><label>Tartar</label><label>Mild / Moderate / Severe</label><br>
-            <input type="checkbox" id="txtGin" value=""><label>Gingivitis</label><label>Mild / Moderate / Severe</label></div>
+            <input type="checkbox" id="txtMembrane" value=""><label>Pale Membranes</label><br>
+            <input type="checkbox" id="txtTartar" value=""><label>Tartar</label><label>Mild / Moderate / Severe</label><br>
+            <input type="checkbox" id="txtGingivitis" value=""><label>Gingivitis</label><label>Mild / Moderate / Severe</label>
             
-            <div class="abdo"><label><span>Abdomen</span></label><br>
+            <label><span>Abdomen</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <input type="checkbox" id="txtMass" value=""><label>Abdominal Mass</label><br>
-            <input type="checkbox" id="txtAsci" value=""><label>Ascites</label><br>
-            <input type="checkbox" id="txtTen" value=""><label>Tense</label><br>
-            <input type="checkbox" id="txtHern" value=""><label>Hernia</label><br>
-            <label>Umbilical</label><input type="checkbox" id="txtUmb" value="">
-            <label>Inguinal</label><input type="checkbox" id="txtIngu" value=""></div>
+            <input type="checkbox" id="txtAscites" value=""><label>Ascites</label><br>
+            <input type="checkbox" id="txtTense" value=""><label>Tense</label><br>
+            <input type="checkbox" id="txtHernia" value=""><label>Hernia</label><br>
+            <label>Umbilical</label><input type="checkbox" id="txtUmbilical" value="">
+            <label>Inguinal</label><input type="checkbox" id="txtInguinal" value="">
             
-            <div class="musc"><label><span>Musculo-Skeletal</span></label><br>
+            <label><span>Musculo-Skeletal</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <input type="checkbox" id="txtPain" value=""><label>Pain</label><br>
             <input type="checkbox" id="txtNail" value=""><label>Nail Problem</label><br>
             <input type="checkbox" id="txtLame" value=""><label>Lameness</label><br>
-            <input type="checkbox" id="txtJoin" value=""><label>Joint Problem</label><br><br>
-            <label>Location(s):</label><br><input type="text" id="txtLoc" value=""/></div>
+            <input type="checkbox" id="txtJoint" value=""><label>Joint Problem</label><br><br>
+            <label>Location(s):</label><br><input type="text" id="txtLoc" value=""/>
            
-            <div class="skin"><div class="cov"><label><span>Skin / Hair Coat</span></label><br>
+            <label><span>Skin / Hair Coat</span></label><br>
             <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label><br>
             <input type="checkbox" id="txtDull" value=""><label>Dull / Dry</label><br>
             <input type="checkbox" id="txtShed" value=""><label>Excessive Shedding</label><br>
             <input type="checkbox" id="txtScaly" value=""><label>Scaly</label><br>
             <input type="checkbox" id="txtScab" value=""><label>Scabs</label><br>
             <input type="checkbox" id="txtLoss" value=""><label>Hair Loss</label><br>
-            <input type="checkbox" id="txtMat" value=""><label>Matted   </label><br>
-            <input type="checkbox" id="txtHot" value=""><label>Hot Spot</label><br>
-            <input type="checkbox" id="txtStaph" value=""><label>Staph Infection</label></div>
-            <div class="hair"><input type="checkbox" id="txtAbs" value=""><label>Abscess</label><br>
+            <input type="checkbox" id="txtMatt" value=""><label>Matted   </label><br>
+            <input type="checkbox" id="txtSpot" value=""><label>Hot Spot</label><br>
+            <input type="checkbox" id="txtStaph" value=""><label>Staph Infection</label>
+            <input type="checkbox" id="txtAbscess" value=""><label>Abscess</label><br>
             <input type="checkbox" id="txtCyst" value=""><label>Cyst</label><br>
             <input type="checkbox" id="txtFlea" value=""><label>Fleas</label><br>
             <input type="checkbox" id="txtTumor" value=""><label>Tumor</label><br>
             <input type="checkbox" id="txtWart" value=""><label>Wart</label><br>
             <input type="checkbox" id="txtLick" value=""><label>Excessive licking of paws</label><br>
             <input type="checkbox" id="txtTick" value=""><label>Ticks</label><br>
-            <input type="checkbox" id="txtMite" value=""><label>Mange Mite</label></div></div>
+            <input type="checkbox" id="txtMite" value=""><label>Mange Mite</label>\
           
-            <div class="test"><label><span>Reccommended Tests / Treatments</span></label><br>
-            <input type="checkbox" id="txtRay" value=""><label>X-Rays</label><br>
+            <label><span>Reccommended Tests / Treatments</span></label><br>
+            <input type="checkbox" id="txtXray" value=""><label>X-Rays</label><br>
             <input type="checkbox" id="txtEkg" value=""><label>EKG</label><br>
-            <input type="checkbox" id="txtUrin" value=""><label>Urinalysis</label><br>
-            <input type="checkbox" id="txtThyr" value=""><label>Thyroid Level</label><br>
+            <input type="checkbox" id="txtUrine" value=""><label>Urinalysis</label><br>
+            <input type="checkbox" id="txtThyroid" value=""><label>Thyroid Level</label><br>
             <input type="checkbox" id="txtClean" value=""><label>Teeth Ultrasonic Cleaning</label><br>
             <input type="checkbox" id="txtDrug" value=""><label>Drug Monitoring</label><br>
             <input type="checkbox" id="txtBlood" value=""><label>Blood Screen</label><br>
             <input type="checkbox" id="txtEar" value=""><label>Deep Ear Video</label><br>
-            <input type="checkbox" id="txtUp" value=""><label>Follow Up: </label><input type="text" id="txtUp" value=""/><br>
-            <input type="checkbox" id="txtOther" value=""><label>Other: </label><input type="text" id="txtOth" value=""/></div>
+            <input type="checkbox" id="txtFollow" value=""><label>Follow Up: </label><input type="text" id="txtUp" value=""/><br>
+            <input type="checkbox" id="txtOther" value=""><label>Other: </label><input type="text" id="txtOth" value=""/>
             
-            <div class="com"><label><span>Comments:</span> </label><input type="text" id="txtCom" value=""><br>
-            <label><b>Vet Tech:</b> </label><input type="text" id="txtTech" value="">
-            <label><b>Veterinarian:</b> </label><input type="text" id="txtVet" value="">
-            <label><b>Date:</b> </label><input type="text" id="txtDat" value=""></form></div>
+            <label><span>Comments:</span></label><input type="text" id="txtCom" value=""><br>
+            <label><b>Vet Tech:</b></label> <input type="text" id="txtTech" value="">
+            <label><b>Veterinarian:</b></label> <input type="text" id="txtVet" value="">
+            <label><b>Date:</b></label> <input type="text" id="txtDate" value="">
+        </form>
 
-    <div class="consent">
-        <h2>Consent/Admittance Form</h2>
-        <form action="">
+        <form class="admit" action="">
+            <h2>Consent/Admittance Form</h2>
             <label>Client Name: </label><input type="text" id="txtClient" value=""/>
             <label>Patient Name: </label><input type="text" id="txtPatient" value=""/><br>
-            <label>Date: </label><input type="text" id="txtDat" value=""/>
-            <label>Procedure: </label><input type="text" id="txtProc" value=""/>
+            <label>Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Procedure: </label><input type="text" id="txtProceed" value=""/>
             <input type="checkbox" id="txtMale" value=""/><label>Male</label>
             <input type="checkbox" id="txtFemale" value=""/><label>Female</label><br>
             <p>Your pet has been scheduled for a procedure requiring sedation or anesethesia. By signing this form, you are authorizing Great and Small Vet and its
             agents to administer tranquilizers, anasethetics, and analgesia that are deemed appropriate. Please be aware that all drugs have the potential for 
             adverse side effects in any particular animal. The chances of such occurences are extremely small; however, death can result in any anesthetized 
             patient. </p>
-            <label>Owner Initials: </label><input type="text" id="txtOwn" value=""/>
+            <label>Owner Initials: </label><input type="text" id="txtOwner" value=""/>
             <label>Tech Initials: </label><input type="text" id="txtTech" value=""/><br>
             <p>In an effort to ensure your pet's safety and to anticipate any problems before they occur, we advise pre-anesthetic blood work and electrocardiogram
             prior to anesthesia. Blood work will determine the kidney and liver functions, which participate in the metabolism of anesthesia. An electrocardiogram
@@ -351,7 +360,7 @@
             <label>Blood Work: </label>
             <input type="checkbox" id="txtBlood" value=""/><label>Accept</label>
             <input type="checkbox" id="txtBlood" value=""/><label>Decline</label>
-            <div class="electro"><label>Electrocardiogram: </label>
+            <label>Electrocardiogram: </label>
             <input type="checkbox" id="txtElectro" value=""/><label>Accept</label>
             <input type="checkbox" id="txtElectro" value=""/><label>Decline</label><br>
             <label>Owner Initials: </label><input type="text" id="txtOwn" value=""/>
@@ -366,7 +375,7 @@
             <label>Heartworm: </label>
             <input type="checkbox" id="txtHeart" value=""/><label>Accept</label>
             <input type="checkbox" id="txtHeart" value=""/><label>Decline</label>
-            <div class="felv"><label>FeLV/FIV: </label>
+            <label>FeLV/FIV: </label>
             <input type="checkbox" id="txtFel" value=""/><label>Accept</label>
             <input type="checkbox" id="txtFel" value=""/><label>Decline</label><br>
             <label>Owner Initials: </label><input type="text" id="txtOwn" value=""/>
@@ -436,28 +445,27 @@
             <p>I understand that anesthesia is a risk and authorize the above procedures. I understand that I will be contacted first if any changes in our 
             discussed protocol occur.</p>
             <label>Client Signature: </label><input type="text" id="txtSign" value=""/>
-        </form></div>
+        </form>
 
-    <div class="history">
-        <form action="">
+        <form class="history" action="">
             <h2>Patient Medical History</h2>
-            <label>Owner's Name: </label><input type="text" id="txtOwn" value=""/>
+            <label>Owner's Name: </label><input type="text" id="txtOwner" value=""/>
             <label>Spouse: </label><input type="text" id="txtSpouse" value=""/><br>
-            <label>Address: </label><input type="text" id="txtAdd" value=""/><br>
-            <label>Home Telephone: </label><input type="text" id="txtPhon" value=""/>
-            <label>Work Telephone: </label><input type="text" id="txtPhon" value=""/><br>
-            <label>Employer's Name & Address: </label><input type="text" id="txtAdd" value=""/><br>
-            <label>Spouse's Employer & Address: </label><input type="text" id="txtAdd" value=""/><br>
-            <label>Best time to call regarding pet: </label><input type="text" id="txtPetcall" value=""/>
-            <label>Phone #: </label><input type="text" id="txtPhon" value=""/><br>
-            <label>Emergency #: </label><input type="text" id="txtPhon" value=""/><br>
+            <label>Address: </label><input type="text" id="txtAddy" value=""/><br>
+            <label>Home Telephone: </label><input type="text" id="txtPhone" value=""/>
+            <label>Work Telephone: </label><input type="text" id="txtPhone" value=""/><br>
+            <label>Employer's Name & Address: </label><input type="text" id="txtAddy" value=""/><br>
+            <label>Spouse's Employer & Address: </label><input type="text" id="txtAddy" value=""/><br>
+            <label>Best time to call regarding pet: </label><input type="text" id="txtCall" value=""/>
+            <label>Phone #: </label><input type="text" id="txtPhone" value=""/><br>
+            <label>Emergency #: </label><input type="text" id="txtPhone" value=""/><br>
             <p><strong>Written estimates available upon request.</strong> Please ask receptionist if estimate needed. <strong><br>
             All fees due when services rendered.</strong> If you are paying by check or credit card, please fill out information below:</p>
             <input type="checkbox" id="txtMc" value=""/><label>MC</label>
             <input type="checkbox" id="txtVisa" value=""/><label>Visa</label><label>Expiry Date: </label><input type="text" id="txtExpiry" value=""/>
             <label>Driver's License #: </label><input type="text" id="txtNum" value=""/>
             <label>Province/Territory: </label><input type="text" id="txtProv" value=""/>
-            <label>Expires: </label><input type="text" id="txtDat" value=""/>
+            <label>Expires: </label><input type="text" id="txtDate" value=""/>
             <p>How did you heard about Great and Small Vet?</p>
             <label>Yellow Pages: </label><input type="text" id="txtNum" value=""/>
             <label>Referral (Name): </label><input type="text" id="txtNam" value=""/><br>
@@ -466,102 +474,101 @@
             <label>Pet's Origin: </label>
             <input type="checkbox" id="txtRescue" value=""/><label>Humane Society</label>
             <input type="checkbox" id="txtShop" value=""/><label>Pet Shop</label>
-            <input type="checkbox" id="txtKen" value=""/><label>Kennel</label>
+            <input type="checkbox" id="txtKennel" value=""/><label>Kennel</label>
             <input type="checkbox" id="txtBreeder" value=""/><label>Breeder</label>
             <input type="checkbox" id="txtFriend" value=""/><label>Friend</label>
             <input type="checkbox" id="txtStray" value=""/><label>Stray</label>
             <input type="checkbox" id="txtOther" value=""/><label>Other</label>
-        </form></div>
+        </form>
 
-    <div class="cert">
-        <h2>Health Certificates (vaccine, spay/neuter, health check)</h2>
-        <form action="">
+        <form class="certif" action="">
+            <h2>Health Certificates (vaccine, spay/neuter, health check)</h2>
             <h2><strong>Rabies Vaccine Certificate</strong></h2>
             <ul>
-                <div class="vacc"><label>Rabies Tag #</label><br>
+                <label>Rabies Tag #</label><br>
                 <input type="text" id="txtTag" value=""/><br>
                 <label>Microchip #</label><br>
-                <input type="text" id="txtTag" value=""/></div>
-                <div class="addy"><label>Owner's Name & Address</label><br>
+                <input type="text" id="txtTag" value=""/>
+                <label>Owner's Name & Address</label><br>
                 <label>Last</label><input type="text" id="txtLast" value=""/>
                 <labe>First </label><input type="text" id="txtFirst" value=""/>
-                <label>Phone</label><input type="text" id="txtPhon" value=""/><br>
-                <label>Street</label><input type="text" id="txtSt" value=""/>
-                <label>City</label><input type="text" id="txtSt" value=""/><br>
+                <label>Phone</label><input type="text" id="txtPhone" value=""/><br>
+                <label>Street</label><input type="text" id="txtStreet" value=""/>
+                <label>City</label><input type="text" id="txtCity" value=""/><br>
                 <label>Province/Territory</label><input type="text" id="txtProv" value=""/>
-                <label>Postal Code</label><input type="text" id="txtPost" value=""/></div>
-                <div class="species"><label>Species</label><br>
+                <label>Postal Code</label><input type="text" id="txtCode" value=""/>
+                <label>Species</label><br>
                 <label>Dog</label><input type="checkbox" id="txtDog" value=""/><br>
                 <label>Cat</label><input type="checkbox" id="txtCat" value=""/><br>
                 <label>Other</label><input type="checkbox" id="txtOther" value=""/><br>
-                <label>(Specify)</label></div>
-                <div class="sex"><label>Sex</label><br>
+                <label>(Specify)</label>
+                <label>Sex</label><br>
                 <label>Male</label><input type="checkbox" id="txtMale" value=""/><br>
                 <label>Female</label><input type="checkbox" id="txtFemale" value=""/><br>
                 <label>Neuter</label><input type="checkbox" id="txtNeuter" value=""/><br>
-                <label>Spay</label><input type="checkbox" id="txtSpay" value=""/></div>
-                <div class="size"><label>Size</label><br>
+                <label>Spay</label><input type="checkbox" id="txtSpay" value=""/>
+                <label>Size</label><br>
                 <label>Under 20 lbs</label><input type="checkbox" id="txtPounds" value=""/><br>
                 <label>20 - 50 lbs</label><input type="checkbox" id="txtPounds" value=""/><br>
-                <label>Over 50 lbs</label><input type="checkbox" id="txtPounds" value=""/></div>
-                <div class="anim"><label>Animal Control License</label><br>
+                <label>Over 50 lbs</label><input type="checkbox" id="txtPounds" value=""/>
+                <label>Animal Control License</label><br>
                 <label>1 yr</label><input type="checkbox" id="txtYear" value=""/><br>
                 <label>3 yr</label><input type="checkbox" id="txtYear" value=""/><br>
-                <label>Other</label><input type="checkbox" id="txtYear" value=""/></div>
-                <div class="signal"><label>Breed</label>
-                <input type="text" id="#txtBred" value=""/>
+                <label>Other</label><input type="checkbox" id="txtYear" value=""/>
+                <label>Breed</label>
+                <input type="text" id="#txtBreed" value=""/>
                 <label>Name</label>
                 <input type="text" id="#txtPet" value=""/><br>
                 <label>Colours/Markings</label>
-                <input type="text" id="#txtCol" value=""/></div>
-                <div class="dat"><label>Date Vaccinated</label>
-                <input type="text" id="#txtDat value="/><br>
+                <input type="text" id="#txtColour" value=""/>
+                <label>Date Vaccinated</label>
+                <input type="text" id="#txtDate value="/><br>
                 <label>Next Vaccination Due:</label>
-                <input type="text" id="#txtDat" value=""/><div>
-                <div class="prod"><label>Product Name</label><input type="text" id="#txtProd" value=""/><br>
-                <div class="man"><label>Manufacturer (First 3 Letters)</label>
+                <input type="text" id="#txtDate" value=""/>
+                <label>Product Name</label><input type="text" id="#txtProd" value=""/><br>
+                <label>Manufacturer (First 3 Letters)</label>
                 <table class="letter"><tr><th></th><th></th><th></th></tr></table>
-                <input type="checkbox" id="txtCan" value=""/><label>1 yr CCVB Licensed Vaccine</label><br>
-                <input type="checkbox" id="txtCan" value=""/><label>3 yr CCVB Licensed Vaccine</label><br>
-                <input type="checkbox" id="txtCan" value=""/><label>4 yr CCVB Licensed Vaccine</label><br>
-                <input type="checkbox" id="txtCan" value=""/><label>Initial Dose</label><br>
+                <input type="checkbox" id="txtVacc" value=""/><label>1 yr CCVB Licensed Vaccine</label><br>
+                <input type="checkbox" id="txtVacc" value=""/><label>3 yr CCVB Licensed Vaccine</label><br>
+                <input type="checkbox" id="txtVacc" value=""/><label>4 yr CCVB Licensed Vaccine</label><br>
+                <input type="checkbox" id="txtVacc" value=""/><label>Initial Dose</label><br>
                 <input type="checkbox" id="txtDose" value=""/><label>Booster Dose</label><br>
-                <input type="text" id="txtSer" value=""/><br><label>Vacc. Serial (Lot) #</label></div>
-                <div class="vet"><label>Veterinarian: </label><input type="text" id="txtVet" value=""/><br>
+                <input type="text" id="txtSerial" value=""/><br><label>Vacc. Serial (Lot) #</label>
+                <label>Veterinarian: </label><input type="text" id="txtVet" value=""/><br>
                 <label>License #: </label><input type="text" id="#txtNum" value=""/><br>
-                <label>Veterinarian's <br> Signature</label><input type="text" id="#txtSig" value=""/><br>
-                <label>Address</label></div></form></div>
+                <label>Veterinarian's <br> Signature</label><input type="text" id="#txtSign" value=""/><br>
+                <label>Address</label>
+            </form>
 
-    <div class="release">
-        <h2>Veterinary Release Form</h2>
-        <form action="">
+        <form class="release" action="">
+            <h2>Veterinary Release Form</h2>
             <label>Owner's Full Name: </label><input type="text" id="txtNam" value=""/><br>
-            <label>Address: </label><input type="text" id="txtAdd" value=""/><br>
-            <label>Phone #1: </label><input type="text" id="txtPhon" value=""/><br>
-            <label>Phone #2: </label><input type="text" id="txtPhon" value=""/><br>
+            <label>Address: </label><input type="text" id="txtAddy" value=""/><br>
+            <label>Phone #1: </label><input type="text" id="txtPhone" value=""/><br>
+            <label>Phone #2: </label><input type="text" id="txtPhone" value=""/><br>
             <h2>To whom it may concern</h2>
-            <p>I hereby authorize the attending veterinary to treat any of my pets as listed on the Pet Information Sheet and I accept full responsibility for all 
-            fees and charges (limited to <label>$ </label><input type="text" id="txtAmt" value=""/>) incurred in the treatment of any of my pets.</p><br>
-            <label>Owner's Signature: </label><input type="text" id="txtSig" value=""/><br>
-            <label>Date: </label><input type="text" id="txtDat" value=""/>
-        </form></div>
-    
-        <div class="board">
-        <h2>Boarding Form</h2>
-        <form action="">
-            <label>Owner: </label><input type="text" id="txtNam" value=""/>
-            <label>Date: </label><input type="text" id="txtDat" value=""/><br>
-            <label>Address: </label><input type="text" id="txtAdd" value=""/>
-            <label>Phone: </label><input type="text" id="txtPhon" value=""/><br>
+            <p>I hereby authorize the attending veterinary to treat any of my pets as listed on the Pet Information Sheet and I accept full 
+            responsibility for all fees and charges (limited to <label>$ </label><input type="text" id="txtAmt" value=""/>) incurred in the 
+            treatment of any of my pets.</p><br>
+            <label>Owner's Signature: </label><input type="text" id="txtSign" value=""/><br>
+            <label>Date: </label><input type="text" id="txtDate" value=""/>
+        </form>
+
+        <form class="board" action="">
+            <h2>Boarding Form</h2>
+            <label>Owner: </label><input type="text" id="txtNae" value=""/>
+            <label>Date: </label><input type="text" id="txtDate" value=""/><br>
+            <label>Address: </label><input type="text" id="txtAddy" value=""/>
+            <label>Phone: </label><input type="text" id="txtPhone" value=""/><br>
             <label>City: </label><input type="text" id="txtCity" value=""/>
             <label>Emergency Contact: </label><input type="text" id="txtEmergency" value=""/><br><br>
             <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
             <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
             <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-            <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/><br>
-            <label>Which Vaccine: </label><input type="checkbox" id="txtCat" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
+            <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/><br>
+            <label>Which Vaccine: </label><input type="checkbox" id="txtVacc" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
             <label>Dog</label><br>
-            <div class="canine"><input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
+            <input type="checkbox" id="txtRabies" value=""/><label>Rabies</label><br>
                  <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
                 <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
                 <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
@@ -569,29 +576,89 @@
                 <input type="checkbox" id="txtKennel" value=""/><label>Bordatella/Kennel Cough</label><br>
                 <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
                 <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
-                <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
-                <input type="checkbox" id="txtGia" value=""/><label>Giardia</label><br>
+                <input type="checkbox" id="txtCold" value=""/><label>Coronavirus</label><br>
+                <input type="checkbox" id="txtGiardia" value=""/><label>Giardia</label><br>
                 <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
-                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label></div>
-            <div class="feline"><input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
+                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label>
+            <input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
                 <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
                 <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
                 <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
-                <input type="checkbox" id="txtRhinoe" value=""/><label>Rhinotracheitis</label><br>
-                <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
+                <input type="checkbox" id="txtRhino" value=""/><label>Rhinotracheitis</label><br>
+                <input type="checkbox" id="txtFiv" value=""/><label>Calcivirus</label><br>
                 <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
-                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label></div>
-            <div class="informat"><label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
-            <label>Last Bordatella Date: </label><input type="text" id="txtDat" value=""/><br>
+                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label>
+            <label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
+            <label>Last Bordatella Date: </label><input type="text" id="txtDate" value=""/><br>
             <label>Medications: </label><input type="text" id="txtMeds" value=""/>
             <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
             <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
             <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
             <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-            <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/></div>
-            <label>Which Vaccine: </label><input type="checkbox" id="txtCat" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
+            <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Which Vaccine: </label><input type="checkbox" id="txtVacc" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
             <label>Dog</label><br>
-            <div class="canine"><input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
+            <input type="checkbox" id="txtRabies" value=""/><label>Rabies</label><br>
+                <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
+                <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
+                <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
+                <input type="checkbox" id="txtPara" value=""/><label>Parainfluenza</label><br>
+                <input type="checkbox" id="txtKennel" value=""/><label>Bordatella/Kennel Cough</label><br>
+                <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
+                <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
+                <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
+                <input type="checkbox" id="txtGiardia" value=""/><label>Giardia</label><br>
+                <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
+                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label>
+                <input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
+                <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
+                <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
+                <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
+                <input type="checkbox" id="txtRhino" value=""/><label>Rhinotracheitis</label><br>
+                <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
+                <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
+                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label>
+                <label>Last Rabies Date: </label><input type="text" id="txtDate" value=""/>
+                <label>Last Bordatella Date: </label><input type="text" id="txtDate" value=""/><br>
+                <label>Medications: </label><input type="text" id="txtMeds" value=""/>
+                <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
+                <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
+                <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
+                <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
+                <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Which Vaccine: </label><input type="checkbox" id="txtVacc" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
+            <label>Dog</label><br>
+            <input type="checkbox" id="txtRabies" value=""/><label>Rabies</label><br>
+                <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
+                <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
+                <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
+                <input type="checkbox" id="txtPara" value=""/><label>Parainfluenza</label><br>
+                <input type="checkbox" id="txtKennel" value=""/><label>Bordatella/Kennel Cough</label><br>
+                <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
+                <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
+                <input type="checkbox" id="txtCold" value=""/><label>Coronavirus</label><br>
+                <input type="checkbox" id="txtGiardia" value=""/><label>Giardia</label><br>
+                <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
+                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label>
+                <input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
+                <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
+                <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
+                <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
+                <input type="checkbox" id="txtRhino" value=""/><label>Rhinotracheitis</label><br>
+                <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
+                <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
+                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label>
+                <label>Last Rabies Date: </label><input type="text" id="txtDate" value=""/>
+                <label>Last Bordatella Date: </label><input type="text" id="txtDate" value=""/><br>
+                <label>Medications: </label><input type="text" id="txtMeds" value=""/>
+                <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
+                <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
+                <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
+                <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
+                <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Which Vaccine: </label><input type="checkbox" id="txtVacc" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
+            <label>Dog</label><br>
+            <input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
                 <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
                 <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
                 <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
@@ -602,26 +669,26 @@
                 <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
                 <input type="checkbox" id="txtGia" value=""/><label>Giardia</label><br>
                 <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
-                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label></div>
-                <div class="feline"><input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
+                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label>
+                <input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
                 <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
                 <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
                 <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
-                <input type="checkbox" id="txtRhinoe" value=""/><label>Rhinotracheitis</label><br>
+                <input type="checkbox" id="txtRhino" value=""/><label>Rhinotracheitis</label><br>
                 <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
                 <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
-                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label></div>
-                <div class="informat"><label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
+                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label>
+                <label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
                 <label>Last Bordatella Date: </label><input type="text" id="txtDat" value=""/><br>
                 <label>Medications: </label><input type="text" id="txtMeds" value=""/>
                 <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
                 <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
                 <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
                 <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-                <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/></div>
-            <label>Which Vaccine: </label><input type="checkbox" id="txtCat" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
+                <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/>
+            <label>Which Vaccine: </label><input type="checkbox" id="txtVacc" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
             <label>Dog</label><br>
-            <div class="canine"><input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
+            <input type="checkbox" id="txtRabies" value=""/><label>Rabies</label><br>
                 <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
                 <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
                 <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
@@ -630,85 +697,25 @@
                 <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
                 <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
                 <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
-                <input type="checkbox" id="txtGia" value=""/><label>Giardia</label><br>
+                <input type="checkbox" id="txtGiardia" value=""/><label>Giardia</label><br>
                 <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
-                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label></div>
-                <div class="feline"><input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
+                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label>
+                <input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
                 <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
                 <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
                 <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
                 <input type="checkbox" id="txtRhinoe" value=""/><label>Rhinotracheitis</label><br>
                 <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
                 <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
-                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label></div>
-                <div class="informat"><label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
-                <label>Last Bordatella Date: </label><input type="text" id="txtDat" value=""/><br>
+                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label>
+                <label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
+                <label>Last Bordatella Date: </label><input type="text" id="txtDate" value=""/><br>
                 <label>Medications: </label><input type="text" id="txtMeds" value=""/>
                 <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
                 <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
                 <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
                 <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-                <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/></div>
-            <label>Which Vaccine: </label><input type="checkbox" id="txtCat" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
-            <label>Dog</label><br>
-            <div class="canine"><input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
-                <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
-                <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
-                <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
-                <input type="checkbox" id="txtPara" value=""/><label>Parainfluenza</label><br>
-                <input type="checkbox" id="txtKennel" value=""/><label>Bordatella/Kennel Cough</label><br>
-                <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
-                <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
-                <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
-                <input type="checkbox" id="txtGia" value=""/><label>Giardia</label><br>
-                <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
-                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label></div>
-                <div class="feline"><input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
-                <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
-                <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
-                <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
-                <input type="checkbox" id="txtRhinoe" value=""/><label>Rhinotracheitis</label><br>
-                <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
-                <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
-                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label></div>
-                <div class="informat"><label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
-                <label>Last Bordatella Date: </label><input type="text" id="txtDat" value=""/><br>
-                <label>Medications: </label><input type="text" id="txtMeds" value=""/>
-                <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
-                <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
-                <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
-                <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-                <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/></div>
-            <label>Which Vaccine: </label><input type="checkbox" id="txtCat" value=""/><label>Cat</label><input type="checkbox" id="txtDog" value=""/>
-            <label>Dog</label><br>
-            <div class="canine"><input type="checkbox" id="txtRabi" value=""/><label>Rabies</label><br>
-                <input type="checkbox" id="txtTemp" value=""/><label>Distepmer</label><br>
-                <input type="checkbox" id="txtHepa" value=""/><label>Hepatitis/Adenovirus</label><br>
-                <input type="checkbox" id="txtParvo" value=""/><label>Parvovirus</label><br>
-                <input type="checkbox" id="txtPara" value=""/><label>Parainfluenza</label><br>
-                <input type="checkbox" id="txtKennel" value=""/><label>Bordatella/Kennel Cough</label><br>
-                <input type="checkbox" id="txtLepto" value=""/><label>Leptospirosis</label><br>
-                <input type="checkbox" id="txtLyme" value=""/><label>Lyme Disease</label><br>
-                <input type="checkbox" id="txtCoro" value=""/><label>Coronavirus</label><br>
-                <input type="checkbox" id="txtGia" value=""/><label>Giardia</label><br>
-                <input type="checkbox" id="txtRattle" value=""/><label>Rattlesnake Vaccine</label><br>
-                <input type="checkbox" id="txtFlu" value=""/><label>Canine Influenza H3N8</label></div>
-                <div class="feline"><input type="checkbox" id="txtPan" value=""/><label>Panleukopenia</label><br>
-                <input type="checkbox" id="txtHerpes" value=""/><label>Feline Herpesvirus 1</label><br>
-                <input type="checkbox" id="txtChlad" value=""/><label>Chladmyophila felis</label><br>
-                <input type="checkbox" id="txtLeuk" value=""/><label>Feline Leukemia Virus</label><br>
-                <input type="checkbox" id="txtRhinoe" value=""/><label>Rhinotracheitis</label><br>
-                <input type="checkbox" id="txtCalc" value=""/><label>Calcivirus</label><br>
-                <input type="checkbox" id="txtImmuno" value=""/><label>Feline Immunodeficiency Virus</label><br>
-                <input type="checkbox" id="txtCough" value=""/><label>Bordatella bronchiseptica</label></div>
-                <div class="informat"><label>Last Rabies Date: </label><input type="text" id="txtDat" value=""/>
-                <label>Last Bordatella Date: </label><input type="text" id="txtDat" value=""/><br>
-                <label>Medications: </label><input type="text" id="txtMeds" value=""/>
-                <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
-                <label>Pet's Name: </label><input type="text" id="txtPet" value=""/>
-                <label>Breed/Colour: </label><input type="text" id="txtBreed" value=""/><br>
-                <label>Sex/Age: </label><input type="text" id="txtAge" value=""/>
-                <label>Last Vaccine Date: </label><input type="text" id="txtDat" value=""/></div>
+                <label>Last Vaccine Date: </label><input type="text" id="txtDate" value=""/>
             <label>Medications: </label><input type="text" id="txtMeds" value=""/><br>
             <label>Belongings: </label><input type="text" id="txtStuff" value=""/><br><br>
             <label>Procedures during boarding: </label><input type="text" id="txtProcedure" value=""/><br>
@@ -724,29 +731,27 @@
             <p>In case of emergency, I authorize Great and Small Veterinary Services authorization to treat my pet(s).</p>
             <p>I acknowledge that my pets can be picked up only during regular office hours, and I am to inform them if I will be delayed, and will pay for any
             extended stays.</p>
-            <label>Owner's Signature: </label><input type="text" id="txtSig" value=""/>
-            <label>Date: </label><input type="text" id="txtDat" value=""/>
-        </form></div>
+            <label>Owner's Signature: </label><input type="text" id="txtSign" value=""/>
+            <label>Date: </label><input type="text" id="txtDate" value=""/>
+        </form>
 
-        <div class="estimate">
+        <form class="estimate" action="">
             <h2>Treatment Plan Estimate Form</h2>
-            <form action="">
-                <div class="clinic"></div><h2>Great and Small Veterinary Services</h2>
-                <div class="clinic"><p>1212 Apache Crescent</p>
+            <h2>Great and Small Veterinary Services</h2>
+            <p>1212 Apache Crescent</p>
                 <p>Leduc, AB</p>
                 <p>T9E 8T8</p>
-                <p>(780) 387-4848</p></div>
-                <div class="est"><h2>Estimate</h2>
-                <p>Date</p></div>
-                <div class="client">
+                <p>(780) 387-4848</p>
+            <h2>Estimate</h2>
+                <p>Date</p>
                 <p>Name</p>
                 <p>Address</p>
                 <p>City, Province/Territory Postal Code</p>
                 <p>Country</p>
                 <p>Phone</p>
                 <p>E-mail</p>
-                <p>Client #</p></div>
-                <div class="pet"><h2>Pet Info</h2></div>
+                <p>Client #</p>
+                <h2>Pet Info</h2>
                 <table>
                     <tr><th>Description</th><th>Quantity</th><th>Unit Price</th><th>Line Total</th></tr>
                     <tr><td></td><td></td><td></td><td></td></tr>
@@ -765,30 +770,31 @@
                     <tr><td></td><td>GST</td><td>6%</td><td></td></tr>
                     <tr><td></td><td></td><td>Total</td><td></td></tr>  
                 </table>
-            </form></div>
-            
-        <div class="discharge">
-            <h2>Discharge Instructions</h2>
-            <form action="">
+            </form>
+
+            <form class="discharge" action="">
+                <h2>Discharge Instructions</h2>
                 <h2>Post Anesthesia Release Sheet</h2>
-                <p>Please provide clean, dry bedding and a quiet place for your pet to recuperate. Please notify the hospital with any concerns.</p>
+                <p>Please provide clean, dry bedding and a quiet place for your pet to recuperate. Please notify the hospital 
+                with any concerns.</p>
                 <p><span>Diet</span></p>
-                <p>( ) Wait a few hours after arriving home to offer your pet water. Please give only a small amount. If no vomiting occurs, you may offer more 
-                water about an hour later. You may feed a small amount (1/4 normal amount) if water stays down.<br><br>
+                <p>( ) Wait a few hours after arriving home to offer your pet water. Please give only a small amount. If no 
+                vomiting occurs, you may offer more water about an hour later. You may feed a small amount (1/4 normal amount)
+                if water stays down.<br><br>
                 ( ) You may continue to feed your pet normally.<br></p>
-                <label>( ) Special diet instructions: </label><input type="text" id="txtSig" value=""/>
+                <label>( ) Special diet instructions: </label><input type="text" id="txtSign" value=""/>
                 <p><span>Activity:</span></p>
                 <p>( ) Restrict exercise for 1 day. <span>No running, jumping, climbing, or bathing.</span><br><br>
                 ( ) Restrict exercise for 7 days. <span>No running, jumping, climbing, or bathing.</p>
-                <label>( ) Other: </label><input type="text" id="txtSig" value=""/>
+                <label>( ) Other: </label><input type="text" id="txtSign" value=""/>
                 <p><span>Other:</span></p>
                 <p>( ) Please use paper strips or pinto beans in place of litter for 7 days.<br>
                 ( ) Please return for booster vaccine in 3-4 weeks.<br>
-                ( ) Your pet's metabolism may permanently decrease after surgery. You may need to decrease the amount of food you feed in order to prevent 
-                obesity.</p>
+                ( ) Your pet's metabolism may permanently decrease after surgery. You may need to decrease the amount of food 
+                you feed in order to prevent obesity.</p>
                 <p><span>Incision:</span></p>
-                <p>( ) Watch for swelling, redness, or drainage. Prevent scratching, rubbing, and licking of the incision. Please ask for an E-collar if you think 
-                your pet will lick the site.<br>
+                <p>( ) Watch for swelling, redness, or drainage. Prevent scratching, rubbing, and licking of the incision. 
+                Please ask for an E-collar if you think your pet will lick the site.<br>
                 ( ) Ice incision for 5 minutes, 3 to 4 times daily for the first 72 hours.</p>
                 <p><span>Medication:</span></p>
                 <label>( ) Give pain medication: </label><input type="text" id="txtPain" value=""/><br>
@@ -796,15 +802,17 @@
                 <label>( ) Give other medication: </label><input type="text" id="txtMeds" value=""/><br>
                 <label>( ) Start medication: </label><input type="text" id="txtStart" value=""/><br>
                 <p><span>Follow Up Visit:</span></p>
-                <p><label>( ) Recheck in <input type="text" id="txtSig" value=""/>days.</label><br>
-                ( ) There is no need to return for suture removal; the skin was closed with absorbable suture or tissue adhesive.<br><br>
+                <p><label>( ) Recheck in <input type="text" id="txtSign" value=""/>days.</label><br>
+                ( ) There is no need to return for suture removal; the skin was closed with absorbable suture or tissue 
+                adhesive.<br><br>
                 ( ) Not necessary unless you feel there is a problem.</p>
-                <label>Comments: </label><input type="text" id="txtCom" value=""/><br>
+                <label>Comments: </label><input type="text" id="txtComment" value=""/><br>
                 <label>Doctor: </label><input type="text" id="txtDoc" value=""/>
-                <label>Tech: </label><input type="text" id="txtTc" value=""/>
-                <label>Client: </label><input type="text" id="txtClt" value=""/><br>
-                <label>Date: </label><input type="text" id="txtDat" value=""/><br>
-            </form></div>
+                <label>Tech: </label><input type="text" id="txtTechc" value=""/>
+                <label>Client: </label><input type="text" id="txtClient" value=""/><br>
+                <label>Date: </label><input type="text" id="txtDate" value=""/><br>
+            </form>
+        <!--</div>-->
     </main>
     <footer></footer>
 </body>

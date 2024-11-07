@@ -6,6 +6,11 @@ body {
     padding: 0;
     width: 100%;
 }
+header,
+main,
+footer {
+    width: 90%;
+}
 h1 {
     font-size: 3em;
     text-align: center;
@@ -23,15 +28,6 @@ h3 {
 p {
     padding-left: 2%;
 }
-header,
-footer,
-main {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-}
 /* HEADER */
 h1,
 h2 {
@@ -42,6 +38,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0 0 0 10%;
     width: 80%;
 }
 nav ul li {
@@ -59,54 +56,58 @@ nav ul li a {
     justify-content: center;
     width: 90%;
 }
-.topic {
+#home {
+    align-items: flex-start;
     display: flex;
-    width: 55%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
 }
-.topic h2 {
-    display: flex;
-    text-align: center;
-    width: 90%;
+#home h2,
+#client h2 {
+    text-align: left;
+    width: 100%;
 }
-.topic p {
-    display: flex;
-    width: 90%;
-}
-.hours,
-.tour,
-.pet {
-    align-items: center;
-    display: flex;
+.sidebar {
+    align-items: flex-end;
     flex-direction: column;
     justify-content: flex-end;
     width: 35%;
 }
-.hours li {
-    text-decoration: none;
+.sidebar h2 {
+    text-align: left;
 }
-.tour video {
-    width: 90%;
+.sidebar img {
+    border: 2px dashed #808080;
+    border-radius: 10%;
+    padding: 1%;
+    width: 85%;
 }
-.pet {
-    border: 1px dashed #000000;
-    border-radius: 5px;
-}
-.client {
+#client {
+    align-items: center;
     display: flex;
-    width: 45%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;    
 }
 /* ABOUT */
+#about {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 45%;
+}
 /* SERVICES */
 .routine {
-    float: left;
     padding-left: 2%;
     padding-right: 5%;
 }
 .emergency {
-    float: left;
+
 }
 .services {
-    clear: both;
+
 }
 .appt {
     padding-left: 2%;
@@ -125,267 +126,31 @@ nav ul li a {
     text-align: center;
 }
 /* FORMS */
-.board, .consent, .history, .estimate, .discharge, .release, .cert, .info, .medical, .soap, .exam {
+.info,
+.medrec,
+.soap,
+.exam,
+.admit,
+.history,
+.certif,
+.release,
+.board,
+.estimate,
+.discharge {
+    margin: 0 2.5% 1% 5%;
+    text-align: left;
+}
+form {
     border: 1px solid #000000;
-    margin-bottom: 5%;
-    margin-top: 1.5%;
+    padding: 0 0 0 20%;
 }
-.board h2, .record h2, .consent h2, .history h2, .cert h2, .discharge h2, .estimate h2, .release h2 {
-    padding-left: 2%;
-    text-align: center;
+label, input {
+    align-items: center;
+    margin: 1% 0;
 }
-.clinic h2 {
-    text-align: left;
-}
-.board form, .record form, .consent form, .history form, .estimate form, .discharge form {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-}
-.board label, .board input, .record label, .record input, .history label, .history input, .consent label, .consent input, .discharge label, .discharge input, 
-.release label, .release input {
-    margin-bottom: 2.5%;
-    margin-right: 1.5%;
-}
-.exam label span {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.sig {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-top: 1px solid #000000;
-    padding-bottom: 0.1%;
-    padding-left: 2%;
-    padding-top: 2%;
-    width: 100%;
-}
-.own {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    padding-bottom: 0.1%;
-    padding-left: 2%;
-    padding-top: 2%;
-    width: 100%;
-}
-.sym {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    padding-left: 2%;
-    float: left;
-    width: 50%;
-}
-.rout {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 11.5%;
-    padding-left: 2%;
-    padding-top: 10%;
-    width: 45%;
-}
-.test, .res {
-    float: left;
-    width: 45%;
-}
-.res {
-    padding-left: 2%;
-}
-.vac {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    border-left: 1px solid #000000;
-    float: left;
-    padding-left: 2%;
-    padding-top: 4.05%;
-    padding-bottom: 5%;
-    clear: both;
-    width: 25%;
-}
-.hart {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 3.65%;
-    padding-left: 2%;
-    padding-top: 3.25%;
-    width: 25%;
-}
-.lung {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 2.75%;
-    padding-left: 2%;
-    padding-top: 3%;
-    width: 20%;
-}
-.eyes {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 5.45%;
-    padding-left: 2%;
-    padding-right: 0.8%;
-    padding-top: 5%; 
-    width: 20% 
-}
-.ears {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    clear: both;
-    float: left;
-    padding-left: 2%;
-    width: 30%;
-}
-.nose {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 3.75%;
-    padding-left: 2%;
-    padding-top: 4%;
-    width: 30%;
-}
-.mouth {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 0.6%;
-    padding-left: 2%;
-    padding-top: 1.5%;
-    width: 32.9%;
-}
-.abdo {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 3%;
-    padding-left: 2%;
-    padding-top: 4%;
-    width: 30%;
-}
-.musc {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 1.77%;
-    padding-left: 2%; 
-    padding-top: 1%;
-    width: 25%;
-}
-.skin {
-    border-bottom: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-bottom: 0.4%;
-    padding-left: 2%;
-    width: 38%;
-}
-.cov {
-    float: left;
-}
-.coat {
-    float: left;
-}
-.test {
-    border-bottom: 1px solid #000000;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
-    float: left;
-    padding-left: 2%;
-}
-.com {
-    clear: both;
-    padding-left: 2%;
-    padding-top: 2%;
-}
-.board {
-    width: 100%;
-}
-.board p {
-    padding-right: 2%;
-}
-.canine {
-    float: left;
-    width: 40%;
-}
-.feline { 
-    float: left;
-    width: 40%;
-}
-.informat {
-    clear: both;
-}
-.discharge span {
-    text-transform: uppercase;
-}
-.letter {
-    height: 60px;
-    width: 10%;
-}
-.clinic {
-    float: left;
-    text-align: left;
-    width: 40%;
-}
-.est {
-    float: right;
-    text-align: left;
-    width: 40%;
-}
-.client {
-    clear: both;
-    float: left;
-    text-align: left;
-    width: 40%;
-}
-.pet {
-    float: right;
-    text-align: left;
-    width: 40%;
-}
-.vacc {
-    float: right;
-    width: 20%;
-}
-.addy {
-    padding-top: 20%;
-    width: 100%;
-}
-.species {
-    float: left;
-    padding-bottom: 2%;
-    width: 20%;
-}
-.sex {
-    float: left;
-    padding-bottom: 2%;
-    width: 20%;
-}
-.size {
-    float: left;
-    padding-bottom: 2%;
-    width: 22%;
-}
-.anim {
-    float: left;
-    width: 25%;
-}
-.signal {
-    clear: both;
-    width: 100%;
-}
-.dat {
-    width: 100%;
-}
-.prod {
-    width: 100%;
+.medical table, .soap table {
+    margin: 2% 5%;
+    width: 90%;
 }
 table {
     margin-bottom: 5%;
@@ -404,16 +169,16 @@ th, td {
 strong {
     text-transform: uppercase;
 }
-#txtDat, #txtBred, #txtRate, #txtTech, #txtVet, #txtAmt, #txtCity, #txtSt {
+#txtDate, #txtBreed, #txtRate, #txtTech, #txtVet, #txtAmt, #txtCity, #txtSt {
     width: 20%;
 }
-#txtPhon, #txtNum, #txtPet, #txtDob, #txtSpec, #txtCol, #txtGen, #txtOth, #txtLast, #txtFirst, #txtSer {
+#txtPhone, #txtNum, #txtPet, #txtBirth, #txtSpec, #txtCol, #txtGen, #txtOth, #txtLast, #txtFirst, #txtSer {
     width: 15%;
 }
-#txtNam, #txtSig {
+#txtName, #txtSign {
     width: 40%;
 }
-#txtAdd, #txtTag {
+#txtAddy, #txtTag {
     width: 35%;
 }
 #txtPost {
@@ -425,11 +190,12 @@ strong {
 #txtAge, #txtFreq {
     width: 5%;
 }
-#txtFix {
+#txtFixed {
     width: 3%;
 }
 #txtRes {
     width: 71%;
 }
-/* PHARMACY */
+/* STORE */
+
 /* BLOG */
