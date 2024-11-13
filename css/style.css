@@ -4,41 +4,43 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 header,
 main,
 footer {
-    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+img {
+    width: 100%;
 }
 h1 {
-    font-size: 3em;
-    text-align: center;
+    font-size: 2em;
     text-shadow: 4px 4px #808080;
     text-transform: uppercase;
 }
 h2 {
-    font-size: 1.5em;
-    padding-left: 2%;
+    font-size: 1.15em;
 }
 h3 {
-    font-size: 1.75em;
-    text-align: center;
+    font-size: 1.25em;
 }
 p {
-    padding-left: 2%;
+    font-size: 1em;
 }
 /* HEADER */
-h1,
-h2 {
-    text-align: center;
+header h1,
+header h3 {
+    width: 90%;
 }
 nav {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 0 0 10%;
+    text-align: center;
     width: 80%;
 }
 nav ul li {
@@ -50,45 +52,23 @@ nav ul li a {
     text-decoration: none;
 }
 /* HOME */
-#home {
+header,
+main,
+footer {
     align-items: center;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    width: 90%;
+    text-align: center;
 }
-#home {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 60%;
-}
-#home h2,
-#client h2 {
-    text-align: left;
-    width: 100%;
-}
-.sidebar {
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 35%;
-}
-.sidebar h2 {
-    text-align: left;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 .sidebar img {
     border: 2px dashed #808080;
     border-radius: 10%;
     padding: 1%;
-    width: 85%;
-}
-#client {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 90%;    
 }
 /* ABOUT */
 #about {
@@ -199,3 +179,58 @@ strong {
 /* STORE */
 
 /* BLOG */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+        text-shadow: 4px 4px #808080;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    /* HOME */
+    #home,
+    #client  {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .topic {
+        width: 60%;
+    }
+    .sidebar {
+        width: 35%;
+    }
+    .review {
+        width: 45%;
+    }
+}
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3em;
+        text-shadow: 4px 4px #808080;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.75em;
+    }
+    p {
+        font-size: 1em;
+    }
+    /* HOME */
+    .sidebar img {
+        width: 90%;
+    }
+}
