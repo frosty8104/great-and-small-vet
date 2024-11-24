@@ -18,6 +18,9 @@ footer {
 img {
     width: 100%;
 }
+ul {
+    list-style-type: none;
+}
 h1 {
     font-size: 2em;
     text-shadow: 4px 4px #808080;
@@ -41,21 +44,28 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     width: 80%;
 }
+nav ul {
+    padding: 0;
+}
 nav ul li {
-    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 nav ul li a {
-    font-size: 1.25em;
-    padding-right: 30px;
+    color: #808080;
+    font-size: 1em;
     text-decoration: none;
+    text-transform: uppercase;
 }
 /* FOOTER */
 footer ul li {
-    display: inline-block;
+    display: block;
+    font-size: 0.5em;
 }
 footer ul li a {
     text-decoration: none;
@@ -87,8 +97,8 @@ main {
 #about {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column;
+    justify-content: space-around;
     width: 90%;
 }
 /* SERVICES */
@@ -158,7 +168,6 @@ td {
 th,
 td {
     display: block;
-    height: 24px;
     text-align: center;
 }
 strong {
@@ -192,6 +201,27 @@ strong {
     p {
         font-size: 1em;
     }
+    /* HEADER */
+    nav {
+        align-items: center;
+        width: 80%;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 0 0 5%;
+        width: 100%;
+    }
+    nav ul li {
+        font-size: 1.25em;
+        justify-content: space-between;
+        width: 50%;
+    }
+    /* FOOTER */
+    footer ul li {
+        display: inline-block;
+        font-size: 0.75em;
+    }
     /* HOME */
     #home,
     #client  {
@@ -200,6 +230,9 @@ strong {
         flex-flow: row wrap;
         justify-content: space-between;
         width: 90%;
+    }
+    #client h2 {
+        width: 100%;
     }
     .topic {
         width: 60%;
@@ -210,6 +243,21 @@ strong {
     }
     .review {
         width: 45%;
+    }
+    .review p {
+        text-align: left;
+    }
+    /* ABOUT */
+    .mission,
+    .vision,
+    .values,
+    .doctors,
+    .staff {
+        width: 45%;
+    }
+    /* FORMS */
+    table {
+        display: inline-block;
     }
 }
 @media (min-width: 1200px) {
@@ -226,6 +274,26 @@ strong {
     }
     p {
         font-size: 1em;
+    }
+    /* HEADER */
+    nav {
+        align-items: center;
+        width: 80%;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    nav ul li {
+        padding: 0 0 0 5%;
+        width: auto;
+    }
+    nav ul li a {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
     }
     /* HOME */
     .sidebar img {

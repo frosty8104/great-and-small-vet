@@ -25,9 +25,9 @@
     <!-- sections/divs: frequent forms, client surveys -->
     <!-- current forms: exam; health certificates: vaccine, spay/neuter, health check; release; estimate -->
         <form class="info" action="">
-            <h2>Great and Small Veterinary Services</h2>
+            <div class="loc"><h2>Great and Small Veterinary Services</h2>
             <p>1212 Apache Crescent, Leduc, AB, T9E 8T8</p>
-            <p>(780) 387-4848</p>
+            <p>(780) 387-4848</p></div>
             <h2>Client & Patient Information</h2>
             <p>Please print clearly</p><br>
             <label>Date: </label><input type="text" id="txtDate" value=""/>
@@ -53,11 +53,9 @@
         </form>
         
         <form class="med" action="">
-            <h2>Great and Small Veterinary Services</h2>
-            <p>1212 Apache Crescent</p>
-            <p>Leduc, AB</p>
-            <p>T9E 8T8</p>
-            <p>(780) 387-4848</p>
+            <div class="loc"><h2>Great and Small Veterinary Services</h2>
+            <p>1212 Apache Crescent, Leduc, AB, T9E 8T8</p>
+            <p>(780) 387-4848</p></div>
             <h2>Patient Medical Record</h2>
             <label>Client Name: </label><input type="text" id="txtName" value=""/>
             <label>Phone #: </label><input type="text" id="txtPhone" value=""/><br>
@@ -92,11 +90,9 @@
         </form>
         
         <form class="soap" action="">
-            <h2>Great and Small Veterinary Services</h2>
-            <p>1212 Apache Crescent</p>
-            <p>Leduc, AB</p>
-            <p>T9E 8T8</p>
-            <p>(780) 387-4848</p>
+            <div class="loc"><h2>Great and Small Veterinary Services</h2>
+            <p>1212 Apache Crescent, Leduc, AB, T9E 8T8</p>
+            <p>(780) 387-4848</p></div>
             <h2>Subjective, Objective, Assessment, Plan (S.O.A.P.)</h2>
             <label>Owner's Name: </label><input type="text" id="txtName" value=""/>
             <label>Patient's Name: </label><input type="text" id="txtPet" value=""/><br>
@@ -132,9 +128,9 @@
         </form>
         
         <form class="exam" action="">
-            <h2>Great and Small Veterinary Services</h2>
+            <div class="loc"><h2>Great and Small Veterinary Services</h2>
             <p>1212 Apache Crescent, Leduc, AB, T9E 8T8</p>
-            <p>(780) 387-4848</p>
+            <p>(780) 387-4848</p></div>
             <h2>Pet Exam Sheet</h2>
             <label><strong>Pet Info: </strong></label>
             <label>Name: </label><input type="text" id="txtPet" value="">
@@ -261,25 +257,17 @@
             </ul>
             <ul>
                 <label><b>Eyes</b></label>
-                <li>
-                    <input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label>
-                </li>
+                <li><input type="checkbox" id="txtNorm" value=""><label>Seems Normal</label></li>
                 <li></li>
-                <li>
-                    <input type="checkbox" id="txtDischarge" value=""><label>Discharge</label>
+                <li><input type="checkbox" id="txtDischarge" value=""><label>Discharge</label>
                     <label>L</label><input type="checkbox" id="txtLeft" value=""/>
-                    <label>R</label><input type="checkbox" id="txtRight" value=""/>
-                </li>
-                <li>
-                    <input type="checkbox" id="txtEntropion" value=""><label>Entropion</label>
+                    <label>R</label><input type="checkbox" id="txtRight" value=""/></li>
+                <li><input type="checkbox" id="txtEntropion" value=""><label>Entropion</label>
                     <label>L</label><input type="checkbox" id="txtLeft" value=""/>
-                    <label>R</label><input type="checkbox" id="txtRight" value=""/>
-                </li>
-                <li>
-                    <input type="checkbox" id="txtUlcer" value=""><label>Corneal Ulcer</label>
+                    <label>R</label><input type="checkbox" id="txtRight" value=""/></li>
+                <li><input type="checkbox" id="txtUlcer" value=""><label>Corneal Ulcer</label>
                     <label>L</label><input type="checkbox" id="txtLeft" value=""/>
-                    <label>R</label><input type="checkbox" id="txtRight" value=""/>
-                </li>
+                    <label>R</label><input type="checkbox" id="txtRight" value=""/></li>
                 <li>
                     <input type="checkbox" id="txtCataract" value=""><label>Cataracts</label>
                     <label>L</label><input type="checkbox" id="txtLeft" value=""/>
@@ -537,11 +525,9 @@
         </form>
 
         <form class="admit" action="">
-            <h2>Great and Small Veterinary Services</h2>
-            <p>1212 Apache Crescent</p>
-            <p>Leduc, AB</p>
-            <p>T9E 8T8</p>
-            <p>(780) 387-4848</p>
+            <div class="loc"><h2>Great and Small Veterinary Services</h2>
+            <p>1212 Apache Crescent, Leduc, AB, T9E 8T8</p>
+            <p>(780) 387-4848</p></div>
             <h2>Consent/Admittance Form</h2>
             <label>Client Name: </label><input type="text" id="txtClient" value=""/>
             <label>Patient Name: </label><input type="text" id="txtPatient" value=""/><br>
@@ -648,7 +634,7 @@
             <label>Client Signature: </label><input type="text" id="txtSign" value=""/><br>
             <button>Submit</button>
             <button>Print</button>
-        </form>
+        </form> 
 
         <form class="history" action="">
             <h2>Great and Small Veterinary Services</h2>
