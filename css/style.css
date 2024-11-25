@@ -113,10 +113,12 @@ main {
 }
 /* FORMS */
 form {
+    align-items: center;
     border: 2px solid #000000;
-    margin: 1% 0;
-    padding: 0 15% 2% 15%;
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 0 0 2% 0;
     width: 90%;
 }
 form h2:nth-child(1) {
@@ -162,12 +164,29 @@ strong {
     text-transform: uppercase;
 }
 /* STORE */
-.store img,
-.store p {
+#store {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 90%;
+}
+#store img,
+#store p {
     width: 90%;
 }
 /* BLOG */
-
+#blog,
+#community {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 90%;
+}
+.sidebar {
+    border: none;
+}
 @media (min-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -201,7 +220,6 @@ strong {
     }
     /* FOOTER */
     footer ul li {
-        display: inline-block;
         font-size: 0.75em;
     }
     /* HOME */
@@ -269,10 +287,32 @@ strong {
         margin-bottom: 2%;
         margin-left: 0.5%;
     }
-    {
-    
-    }
     /* FORMS */
+    #forms {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    /* STORE */
+    #store {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+    #store h2 {
+        width: 100%;
+    }
+    .pharma,
+    .refill,
+    .neutra,
+    .homeo {
+        width: 45%;
+    }
+    /* BLOG */
 }
 @media (min-width: 1200px) {
     h1 {
@@ -313,4 +353,20 @@ strong {
     .sidebar img {
         width: 90%;
     }
+    /* SERVICES */
+    /* FORMS */
+    form {
+        margin: 1% 2% 0 0;
+    }
+    button {
+        margin: 1% 0;
+    }
+    /* STORE */
+    .pharma,
+    .refill,
+    .neutra,
+    .homeo {
+        width: 30%;
+    }
+    /* BLOG */
 }
