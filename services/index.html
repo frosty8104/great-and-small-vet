@@ -23,7 +23,74 @@
     </header>
     <main>
         <section id="services">
-            <div class="procedures"><h2>Procedures</h2></div>
+            <div class="appointment"><h2>Appointment Requests</h2>
+                <form class="appt" action="">
+                    <label>First Name: </label><input type="text" id="txtFirst" value=""/>
+                    <label>Last Name: </label><input type="text" id="txtLast" value=""/><br>
+                    <label>Pet Name: </label><input type="text" id="txtPet" value=""/>
+                    <label>Service(s) Needed: </label><input type="text" id="txtPet" value=""/><br>
+                    <p><i>If this is an emergency, please call <b>(780) 387-4848</b></i></p>
+                </form></div>
+            <div class="procedures"><h2>Procedures</h2>
+                    <ul class="wellness"><h2>Wellness Exams</h2>
+                        <li>whole body exam</li>
+                        <li>checking for lumps and bumps</li>
+                        <li>temperature check</li>
+                        <li>blood check</li>
+                        <li>routine vaccines</li>
+                        <li>titer testing</li>
+                    </ul>
+                    <ul class="surgery"><h2>Surgeries and Dentistry</h2>
+                        <li>teeth cleaning</li>
+                        <li>spay/neuter</li>
+                        <li>Ceasarean section</li>
+                        <li>organ removal (ruptured etc.)</li>
+                        <li>organ fixing (resection etc.)</li>
+                        <li>biopsy</li>
+                    </ul>
+                    <ul class="emerg"><h2>Emergency and Critical Care</h2>
+                        <li>bone setting</li>
+                        <li>wound management</li>
+                        <li>infection management</li>
+                    </ul>
+                    <ul class="diagnostic"><h2>Diagnostic Imaging</h2>
+                        <li>Radiographs</li>
+                        <li>Ultrasound</li>
+                        <li>Endoscopies</li>
+                        <li>MRI</li>
+                        <li>CT</li>
+                    </ul>
+                    <ul class="i-med"><h2>Internal Medicine</h2>
+                        <li>immunotherapy</li>
+                        <li>endoscopy</li>
+                        <li>bronchoscopy</li>
+                        <li>cytoscopy</li>
+                        <li>temporary feeding tube</li>
+                        <li>endocrine, gastrointestinal, urinary, and hematological disease, treatment, and management</li>
+                    </ul>
+                    <ul class="onc"><h2>Oncology</h2>
+                        <li>Radiation</li>
+                        <li>Chemotherapy Treatment</li>
+                    </ul>
+                    <ul class="neuro"><h2>Neurology</h2>
+                        <li>testing</li>
+                        <li>diagnosis</li>
+                        <li>treatment</li>
+                        <li>management</li>
+                    </ul>
+                    <ul class="derma"><h2>Dermatology</h2>
+                        <li>testing</li>
+                        <li>diagnosis</li>
+                        <li>treatment</li>
+                        <li>management</li>
+                    </ul>
+                    <ul class="cardio"><h2>Cardiology</h2>
+                        <li>testing</li>
+                        <li>diagnosis</li>
+                        <li>treatment</li>
+                        <li>management</li>
+                    </ul>
+            </div>
             <div class="routine">
             <h2>Routine Procedures</h2>
             <ul><li>Routine checkups: $50 - 250</li>
@@ -48,17 +115,36 @@
         <li>Emergency Surgery: $1500 - $5000</li>
         <li>Oxygen Therapy: $500 - $3000</li>
         <p><b><i>Pet insurance is recommended to cut down on emergency costs.</i></b></p></ul></div>
-        <div class="services"><h2>Professional Services Offered</h2></div>
-        <div class="appointment"><h2>Appointment Requests</h2>
-        <form class="appt" action="">
-            <label>First Name: </label><input type="text" id="txtFirst" value=""/>
-            <label>Last Name: </label><input type="text" id="txtLast" value=""/><br>
-            <label>Pet Name: </label><input type="text" id="txtPet" value=""/>
-            <label>Service(s) Needed: </label><input type="text" id="txtPet" value=""/><br>
-            <p><i>If this is an emergency, please call <b>(780) 387-4848</b></i></p>
-        </form></div>
+        <div class="services"><h2>Professional Services Offered</h2>
+            <ul class="exotic"><h2>Exotics</h2>
+                <li>fox</li>
+                <li>rabbit</li>
+                <li>hedgehogs</li>
+                <li>ferrets</li>
+                <li>reptiles: turtles, lizards, etc.</li>
+                <li>fish, fresh and salt</li>
+            </ul>
+            <ul class="referral"><h2>Referral Center</h2>
+                <li>Gift Certificates</li>
+                <li>1/2 off exams for a year</li>
+                <li>Free routine vaccines/titers for a year</li>
+                <li>Credit stamp card (free products when card is full)</li>
+                <li>50% of account balance to charity of your choice</li>
+            </ul>
+            <ul class="board"><h2>Boarding</h2>
+                <li>after surgery care</li>
+                <li>daily walks</li>
+                <li>medicine schedules</li>
+            </ul>
+            <ul class="assess"><h2>Behaviour Assessment & Training</h2>
+                <li>behaviour assesment</li>
+                <li>behavior modification</li>
+                <li>puppy training classes</li>
+                <li>Canine Good Citizen training</li>
+            </ul>
+        </div>
         <div class="plans"><h2>Wellness Plans</h2>
-        <h2>Puppy Wellness Plan</h2>
+        <div class="puppy"><h2>Puppy Wellness Plan</h2>
         <p>Hello, and welcome to your pet’s wellness plan. Everything listed below is 20% off, and we include spay and neuter services if 
         required. We aim to make sure your pet is as healthy as he or she can be at affordable prices!</p>
         <h2>Spay/Neuter</h2>
@@ -94,6 +180,39 @@
         <tr><td>Canine Influenza Virus - H3N8/H3N2</td><td>Killed</td><td>SQ</td><td>2 doses 2 - 4 weeks apart 6- 8 weeks +, start 4 weeks prior to
         anticipated exposure risk</td><td>Sustained exposure risk: annually</td></tr>
         <tr><td>SQ = subcutaneous, IM = intramuscular, IN = intranasal</td><td></td><td></td><td></td><td></td></tr></table></div>
+        <div class="kitten"><h2>Kitten Wellness Plan</h2>
+        <p>Hello, and welcome to your pet’s wellness plan. Everything listed below is 20% off, and we include spay and neuter services if 
+            required. We aim to make sure your pet is as healthy as he or she can be at affordable prices!</p>
+            <h2>Spay/Neuter</h2>
+            <p>Spaying or neutering your pet helps avoid breeding-related problems, as well as genetic issues that can be passed down from 
+            mother to puppies or kittens. It will also prevent your pet from contributing to the current overpopulation problem. Spay and 
+            neuter services include:</p>
+            <ul><li>Preanesthetic physical exam/blood test</li>
+            <li>Spay or neuter surgery</li> 
+            <li>Post-op and post-anesthetic care</li></ul>
+            <table><tr><th>Kitten</th><th>Heart Rate</th><th>Respiratory Rate</th><th>Mucous Membranes</th><th>Capillary Refill Time</th><th>Temperature in Celsius</th>
+            </tr>
+            <tr><td>Parameters</td><td>110 - 180</td><td>20 - 30</td><td>Salmon pink</td><td><2.5</td><td>38.0 - 38.5</td></tr>
+            <tr><td>6 - 8 weeks</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>10 - 12 weeks</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>14 - 16 weeks</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Adult - yearly</td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Senior - twice yearly</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+            <h2>Vaccine Schedule</h2>
+            <p>Vaccines offer extra protection against disease infection. As the antibodies from the mother’s colostrum wanes, vaccines are given to help your puppy 
+            create its own immunity by stimulating its immune system with modified live, recombinant, or killed pathogens. Below you will find a timetable of vaccines
+            given, and when.</p>
+            <table><tr><th><b>Core</b></th><th>Age & Dose</th><th>Booster</th></tr>
+            <tr><td>Feline Panleukopenia Virus (FPV), Feline Herpesvirus-1 (FHV-1), Feline Calcivirus (FCV)</td><td><16 weeks - 6 weeks +, 3 - 5 weeks till 
+            16 weeks, > 16 weeks 2 doses 3 - 4 weeks apart</16></td><td>1 dose 1 year after initial; 3+ years after</td></tr>
+            <tr><td>Rabies</td><td>< 16 weeks - 1 dose @ 12 - 16 weeks, > 16 weeks - 1 does</td><td>1 - 3 years according to state or local 
+            ordinance</td></tr>
+            <tr><td><i>Non-core</i></td><td></td><td></td></tr>
+            <tr><td>Feline Leukemia Virus (FeLV)</td><td>< 16 weeks - 2 doses 3 - 4 weeks apart, 8+ weeks; >16 weeks - 2 doses 3 - 4 weeks apart</td>
+            <td>Highly reccomended to 1 year of age; booster recommended for exposure risk - only FeLV cats vaccinated</td></tr>
+            <tr><td>Feline Immunodeficiency Virus</td><td>< 16 weeks - 3 doses when indicated 8+ weeks, 2 doses 2 - 3 weeks apart after 1st; > 16 weeks
+            - 3 doses when indicated 2 - 3 weeks apart</td><td>Annual for sustained risk</td></tr></table></div>
+    </div>
     </section>
     <!-- sections/divs: procedures, professional services offered, appointment requests, wellness plans -->
     </main>
