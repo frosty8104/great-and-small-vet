@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+    <div class="logo"><h1>GSV</h1></div>
     <h1>Great and Small Veterinary Services</h1>
     <h3>1212 Apache Crescent, Leduc, AB T9E 8T8 (780) 387-4848</h3>
     <nav>
@@ -22,7 +23,30 @@
     </nav>
     </header>
     <main>
-        <section class="forms">
+        <section id="species">
+            <table>
+                <tr>
+                    <form action=""><label>Species</label><select id="selSpecies"><option value="canine">Canine</option><option value="feline">Feline</option>
+                    <option value="avian">Avian</option><option value="reptiles">Iguanas, turtles, etc.</option><option value="lagomorph">Lagomorph</option>
+                    <option value="equine">Equine</option><option value="bovine">Bovine</option><option value="ovine">Ovine</option>
+                    <option value="caprine">Caprine</option><option value="vulpes">Vulpes</option><option value="mustelid">Mustelid</option>
+                    <option value="multi">Multiple</option></select></form>
+                </tr>
+                <tr>
+                    <form action=""><label>Common Reference</label><select id="selRef"><option value="dog">Dog</option><option value="cat">Cat</option>
+                    <option value="bird">Bird</option><option value="reptiles">Reptiles</option><option value="rabbit">Rabbit</option>
+                    <option value="horse">Horse</option><option value="cow">Cow</option><option value="sheep">Sheep</option><option value="goat">Goat</option>
+                    <option value="fox">Fox</option><option value="ferret">Ferret</option><option value="multi">Multiple</option></select></form>
+                </tr>
+                <tr>
+                    <form action=""><label>Abbreviation</label><select id="selAbbreviation">Abbreviation<option value="k9">K-9 or Ca</option>
+                    <option value="fe">Fe</option><option value="av">Av</option><option value="ra">Ra</option><option value="eq">Eq</option>
+                    <option value="bo">Bo</option><option value="ov">Ov</option><option value="cap">Cap</option><option value="vu">Vu</option>
+                    <option value="mu">Mu</option><option value="multi">Multiple</option></select></form>
+                </tr>
+            </table>
+        </section>
+        <section id="forms">
         <!-- sections/divs: frequent forms, client surveys -->
         <!-- current forms: exam; health certificates: vaccine, spay/neuter, health check; release; estimate -->
             <form class="history">

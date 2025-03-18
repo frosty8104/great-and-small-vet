@@ -36,6 +36,11 @@ p {
     font-size: 1em;
 }
 /* HEADER */
+header .logo h1 {
+    font-size: 2em;
+    text-align: left;
+    text-shadow: 4px 4px #808080;
+}
 header h1,
 header h3 {
     width: 90%;
@@ -112,12 +117,19 @@ main {
     text-align: center;
 }
 /* FORMS */
+main {
+    margin: 1% 0;
+}
+#species,
 #forms {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 90%;
+}
+.history {
+    margin: 0 0 1% 0;
 }
 label {
     display: inline-block;
@@ -133,8 +145,11 @@ td {
     border-collapse: collapse;
 }
 table {
-    margin: 0 0 1% 5%;
     width: 90%;
+}
+th,
+td {
+    padding: 0.5% 2%;
 }
 /* STORE */
 #store {
@@ -161,6 +176,9 @@ table {
     border: none;
 }
 @media (min-width: 768px) {
+    header .logo h1 {
+        font-size: 2.5em;
+    }
     h1 {
         font-size: 2.5em;
         text-shadow: 4px 4px #808080;
@@ -261,7 +279,7 @@ table {
         margin-left: 0.5%;
     }
     /* FORMS */
-    
+
     /* STORE */
     #store {
         align-items: center;
@@ -280,8 +298,17 @@ table {
         width: 45%;
     }
     /* BLOG */
+    .posts {
+        width: 60%;
+    }
+    .sidebar {
+        width: 30%;
+    }
 }
 @media (min-width: 1200px) {
+    header .logo h1 {
+        font-size: 3em;
+    }
     h1 {
         font-size: 3em;
         text-shadow: 4px 4px #808080;
