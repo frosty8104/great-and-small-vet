@@ -148,8 +148,18 @@ main {
     justify-content: center;
     width: 90%;
 }
-.history {
+form {
+    border: 1px solid #000000;
+}
+.history,
+.medical,
+.soap,
+.problem,
+.exam {
     margin: 0 0 1% 0;
+}
+.history label strong {
+    text-transform: uppercase;
 }
 label {
     display: inline-block;
@@ -158,6 +168,9 @@ label {
 input {
     margin: 0.5% 0;
 }
+.exam ul {
+    padding: 0;
+}
 table,
 th,
 td {
@@ -165,11 +178,12 @@ td {
     border-collapse: collapse;
 }
 table {
+    margin: 1% 0 1% 5%;
     width: 90%;
 }
 th,
 td {
-    padding: 0.5% 2%;
+    padding: 0.5%;
 }
 /* STORE */
 #store {
