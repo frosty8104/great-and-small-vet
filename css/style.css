@@ -148,6 +148,10 @@ main {
     justify-content: center;
     width: 90%;
 }
+#species {
+    border-bottom: 2px double #808080;
+    margin: 0 0 1% 0;
+}
 form {
     border: 1px solid #000000;
 }
